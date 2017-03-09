@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memorandum Book</title>
+	<link rel="stylesheet" href="node_modules/.5.0.0@normalize.css/normalize.css">
+	<link rel="stylesheet" href="node_modules/.2.5.4@jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<div class="msg">
+		<span class="msg-content"></span>
+		<span class="anchor confirmed">知道了</span>
+	</div>
+	<div class="container">
+		<h1>MEMO</h1>
+		<form class="add-task">
+			<input name="content" type="text" placeholder="要写点什么呢？嘤嘤" autofocus autocomplete="off">
+			<button type="submit">submit</button>
+		</form>
+		<div class="task-list">
+			<!-- <div class="task-item">
+				<span><input type="checkbox"></span>
+				<span class="task-content">item content</span>
+				<span>delete</span>
+				<span>detail</span>
+			</div> -->
+		</div>
+		<div class="task-detail-mask"></div>
+		<div class="task-detail">
+		</div>
+	</div>
+	<audio class="alerter" src="alert.mp3"></audio>
+	<script src="node_modules/.3.1.1@jquery/dist/jquery.js"></script>
+	<script src="node_modules/.1.0.4@store.js/store.js"></script>
+	<script src="node_modules/.2.5.4@jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>

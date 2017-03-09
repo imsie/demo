@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	transition: background 0.3s;
+	-webkit-transition: background 0.3s;
+	-ms-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	outline: 0;
+}
+body {
+	background: #00334b;
+	color: #fff;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 10px;
+}
+h1 {
+	text-align: center;
+}
+input, textarea, .task-item, button, .task-detail-mask, .task-detail {
+	border-radius: 3px;
+	padding: 10px;
+}
+input[type="text"], input[type="date"], textarea {
+	display: block;
+	width: 100%;
+	border: 0;
+	background: #eee;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+	-ms-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+	-o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+}
+textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+textarea:hover,
+textarea:focus,
+input[type="text"]:hover, 
+input[type="date"]:hover,
+input[type="text"]:focus, 
+input[type="date"]:focus {
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+	-ms-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+	-o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+}
+button {
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	color: #333;
+}
+.add-task input[type="text"] {
+	float: left;
+	width: 84%;
+	margin-right: 1%;
+}
+[type="submit"], button.primary {
+	background: #46b1e4;
+}
+.add-task [type="submit"] {
+	width: 15%;
+}
+.task-list {
+	margin: 10px 0;
+}
+
+.task-item, .add-task [type="submit"] {
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+	-ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+	-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+.add-task [type="submit"]:hover {
+	background: #5fbe94;
+}
+.task-item {
+	color: #333;
+	background: #fff;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+.task-item:hover {
+	background: #eee;
+}
+.task-item.completed {
+	color: #aaa;
+	opacity: 0.4;
+}
+.task-item.completed:after {
+	content: " ";
+    	height: 1px;
+   	background: #aaa;
+   	width: 96%;
+    	position: relative;
+    	top: -8px;
+    	display: block;
+   	float: right;
+}
+.task-detail {
+	position: absolute;
+	overflow: auto;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+	-ms-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+	-o-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+}
+.task-detail-mask {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.4);
+}
+.task-detail .input-item {
+	margin-bottom: 10px;
+}
+.task-detail {
+	display: none;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+	color: #333;
+	background: #fff;
+}
+.task-detail .content {
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.task-content {
+	margin-left: 10px;
+}
+.fr {
+	float: right;
+}
+.action {
+	color: #888;
+	font-size: 90%;
+}
+.action:hover {
+	color: #333;
+}
+.msg {
+	display: none;
+	text-align: center;
+	background: #ffe264;
+	padding: 10px;
+	color: #333;
+}
+.anchor {
+	cursor: pointer;
+}
+.alerter {
+	width: 0;
+	height: 0;
+}
